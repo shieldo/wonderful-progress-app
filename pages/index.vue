@@ -8,8 +8,8 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      wc: 0,
-      totalWords: 0,
+      wc: '¯\\_(ツ)_/¯',
+      totalWords: '¯\\_(ツ)_/¯',
     };
   },
   async created() {
