@@ -1,5 +1,7 @@
 <template>
-  <h1>Word count is {{ wc }} out of a total of {{ totalWords }}</h1>
+<main class="min-h-screen bg-gray-900 flex">
+  <p class="text-white text-center text-lg m-auto">Word count is <span class="block text-5xl my-4">{{ wc }}</span> out of a total of <span class="block text-5xl my-4">{{ totalWords }}</span></p>
+</main>
 </template>
 
 <script>
@@ -20,8 +22,12 @@ export default {
       // handle error
       return;
     }
-    this.wc = res.data.wc;
-    this.totalWords = res.data.totalWords;
+    this.wc = res.data.wc.toLocaleString();
+    this.totalWords = res.data.totalWords.toLocaleString();
   }
 }
 </script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+</style>
