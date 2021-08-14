@@ -1,6 +1,6 @@
 <template>
 <main class="min-h-screen bg-gray-900 flex">
-  <p class="text-white text-center text-lg m-auto">Word count is <span class="block text-5xl my-4">{{ wc }}</span> out of a total of <span class="block text-5xl my-4">{{ totalWords }}</span></p>
+  <p class="text-white text-center text-lg m-auto">Word count is <span class="block text-5xl my-4">{{ wc }}</span> out of an estimated total of <span class="block text-5xl my-4">{{ totalWords }}</span></p>
 </main>
 </template>
 
